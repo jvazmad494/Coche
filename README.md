@@ -18,14 +18,12 @@ El movimiento está limitado al área visible del navegador para que el coche no
 coche/
 ├── coche.html          # Archivo principal con la estructura HTML
 ├── script.js           # Lógica de movimiento y eventos de teclado
-├── estilos/
-│   └── estilos.css     # Estilos CSS del coche y del fondo
-├── img/
-│   ├── coche-abajo.png
-│   ├── coche-arriba.png
-│   ├── coche-derecha.png
-│   ├── coche-izquierda.png
-│   └── red_vehicles.png   # Imagen extra no usada actualmente
+├── estilos.css         # Estilos CSS del coche y del fondo
+├── coche-abajo.png
+├── coche-arriba.png
+├── coche-derecha.png
+├── coche-izquierda.png
+├── red_vehicles.png   # Imagen extra no usada actualmente
 └── README.md           # Este archivo con información del proyecto
 ```
 

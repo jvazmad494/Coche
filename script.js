@@ -14,22 +14,23 @@ document.addEventListener('keydown', function(e) { // Escucha un evento del tipo
     case 'w': // se ha presionado arriba
         topPos = Math.max(0, topPos - velocidad); // modifico la posición de diferencia de pixeles con el margen superior restándole la velocidad. y si resulta que ya está en el máximo, pues no resto nada, porque está en el borde el coche y quiero que aún se vea.
         coche.style.top = topPos + 'px'; //modifico el valor de la propiedad top del coche concatenando el valor de topPos con la extensión de la unidad pixeles
-        coche.style.backgroundImage = "url('../img/coche-arriba.png')"; // Y por supuesto, pongo la imagen asociada a ese evento
+        // utilizamos la ruta correcta a la imagen
+        coche.style.backgroundImage = "url('./coche-arriba.png')";
         break;
     case 's':
         topPos = Math.min(maxAlto, topPos + velocidad);
         coche.style.top = topPos + 'px';
-        coche.style.backgroundImage = "url('../img/coche-abajo.png')";
+        coche.style.backgroundImage = "url('./coche-abajo.png')";
         break;
     case 'a':
         leftPos = Math.max(0, leftPos - velocidad);
         coche.style.left = leftPos + 'px';
-        coche.style.backgroundImage = "url('../img/coche-izquierda.png')";
+        coche.style.backgroundImage = "url('./coche-izquierda.png')";
         break;
     case 'd':
         leftPos = Math.min(maxAncho, leftPos + velocidad);
         coche.style.left = leftPos + 'px';
-        coche.style.backgroundImage = "url('../img/coche-derecha.png')";
+        coche.style.backgroundImage = "url('./coche-derecha.png')";
         break;
     }
 });

@@ -10,6 +10,7 @@ body {
     left: 100px; /* Lo mismo, pero con la izquierda */
     width: 100px; /* Y también definimos el tamaño del coche */
     height: 100px;
-    background-image: url('./img/coche-derecha.png'); /* Como es la posición inicial, cojo la imagen del coche a la derecha por defecto*/
+    /* la imagen se encuentra en la raíz del proyecto */
+    background-image: url('./coche-derecha.png');
     background-size: cover; /*que el tamaño del fondo cubra el espacio reservado por el div del id del coche*/
 }
